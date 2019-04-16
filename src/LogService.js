@@ -39,7 +39,7 @@ class LogService {
       return
     }
     this.isStarted = false
-    this.supportedLogTypes.forEach(type => {
+    supportedLogTypes.forEach(type => {
       console[type] = this.originalConsoleFunction[type]
     })
     this.preSubscriberLogs = []
