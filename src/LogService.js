@@ -59,7 +59,7 @@ class LogService {
     if (this.isTrackingPreSubscriberLogs) {
       return this.preSubscriberLogs.push(log)
     }
-    this.subscriber(log)
+    this.subscriber && this.subscriber(log)
   }
 
   // intercept original console.log call and use custom logic
