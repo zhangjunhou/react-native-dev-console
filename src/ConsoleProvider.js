@@ -78,7 +78,7 @@ export default class ConsoleProvider extends Component<Props, State> {
     if (this.props.disableYellowBox) {
       console.disableYellowBox = true
     }
-    LogService.start(this.addLog, { passtrough: this.props.passtrough })
+    // LogService.start(this.addLog, { passtrough: this.props.passtrough })
     this.setState((prevState) => ({
       isActive: true
     }))
@@ -89,7 +89,7 @@ export default class ConsoleProvider extends Component<Props, State> {
   }
 
   stop = () => {
-    LogService.stop()
+    // LogService.stop()
     this.setState(() => ({
       isActive: false
     }))

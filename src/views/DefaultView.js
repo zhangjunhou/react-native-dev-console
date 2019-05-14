@@ -33,7 +33,7 @@ export default class DefaultView extends Component<Props, State> {
           return (
             <View style={[styles.container, this.props.containerStyle]}>
               <Logs data={value.logs} />
-              <Menu onToggleViewMode={this.toggleViewMode} onClear={value.clearByUser} onClose={value.stopByUser} />
+              {/* <Menu onToggleViewMode={this.toggleViewMode} onClear={value.clearByUser} onClose={value.stopByUser} /> */}
             </View>
           )
         }}
